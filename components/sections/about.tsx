@@ -24,6 +24,8 @@ export function About() {
             <p className="eyebrow">整体方案 / SOLUTION</p>
             <SectionTitle className="mt-5 text-4xl font-semibold tracking-[-0.04em] md:text-6xl">
               行动不是建议的终点，
+              <br className="hidden md:block" />
+              <span className="md:hidden"> </span>
               <span className="text-muted-foreground">而是判断的新起点。</span>
             </SectionTitle>
           </div>
