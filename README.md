@@ -8,6 +8,8 @@
 
 ## 本地运行
 
+项目统一使用 Node.js 24。使用 nvm 时，可在项目目录运行 `nvm use` 切换版本。
+
 ```bash
 npm install
 npm run dev
