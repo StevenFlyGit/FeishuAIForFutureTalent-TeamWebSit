@@ -1,9 +1,8 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 
 export function MagneticCursor() {
-  const cursorRef = useRef<HTMLDivElement>(null)
   const [position, setPosition] = useState({ x: 0, y: 0 })
   const [isHovering, setIsHovering] = useState(false)
 
@@ -76,15 +75,14 @@ export function MagneticCursor() {
     <>
       {/* Main cursor dot */}
       <div
-        ref={cursorRef}
-        className="fixed top-0 left-0 pointer-events-none z-[9999] mix-blend-difference hidden md:block"
+        className="fixed top-0 left-0 pointer-events-none z-[9999] hidden md:block"
         style={{
           transform: `translate(${position.x}px, ${position.y}px)`,
           transition: isHovering ? "width 0.2s, height 0.2s" : "none",
         }}
       >
         <div
-          className="relative -translate-x-1/2 -translate-y-1/2 rounded-full bg-white"
+          className="relative -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-[0_0_0_1px_rgba(0,0,0,0.18)]"
           style={{
             width: isHovering ? "40px" : "8px",
             height: isHovering ? "40px" : "8px",
@@ -95,14 +93,14 @@ export function MagneticCursor() {
 
       {/* Outer ring */}
       <div
-        className="fixed top-0 left-0 pointer-events-none z-[9998] mix-blend-difference hidden md:block"
+        className="fixed top-0 left-0 pointer-events-none z-[9998] hidden md:block"
         style={{
           transform: `translate(${position.x}px, ${position.y}px)`,
           transition: "transform 0.1s",
         }}
       >
         <div
-          className="relative -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/40"
+          className="relative -translate-x-1/2 -translate-y-1/2 rounded-full border border-black/30"
           style={{
             width: isHovering ? "60px" : "32px",
             height: isHovering ? "60px" : "32px",
