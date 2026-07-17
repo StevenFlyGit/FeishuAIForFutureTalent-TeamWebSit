@@ -15,8 +15,8 @@ const experimentSteps = ["兴趣假设", "微任务", "行动证据", "反馈校
 export function Hero() {
   return (
     <section id="top" className="relative min-h-screen overflow-hidden pt-20">
-      <div className="pointer-events-none absolute -right-40 top-12 -z-10 h-[620px] w-[620px] scale-125 md:-right-48 md:top-10 md:h-[840px] md:w-[840px]">
-        <Image src="/images/orb.png" alt="" fill className="object-contain opacity-90" priority />
+      <div className="pointer-events-none absolute -right-56 top-16 -z-10 h-[520px] w-[520px] md:-right-64 md:top-12 md:h-[700px] md:w-[700px]">
+        <Image src="/images/orb.png" alt="" fill className="object-contain opacity-45" priority />
       </div>
 
       <div className="mx-auto grid min-h-[calc(100vh-5rem)] max-w-[1280px] items-center gap-y-14 gap-x-0 px-6 py-16 md:px-12 lg:grid-cols-[1.08fr_.92fr] lg:gap-x-8 lg:py-24">
