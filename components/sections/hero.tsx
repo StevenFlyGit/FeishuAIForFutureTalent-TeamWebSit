@@ -19,8 +19,8 @@ export function Hero() {
         <Image src="/images/orb.png" alt="" fill className="object-contain opacity-90" priority />
       </div>
 
-      <div className="mx-auto grid min-h-[calc(100vh-5rem)] max-w-[1280px] items-center gap-14 px-6 py-16 md:px-12 lg:grid-cols-[1.08fr_.92fr] lg:py-24">
-        <div className="max-w-4xl">
+      <div className="mx-auto grid min-h-[calc(100vh-5rem)] max-w-[1280px] items-center gap-y-14 gap-x-0 px-6 py-16 md:px-12 lg:grid-cols-[1.08fr_.92fr] lg:gap-x-8 lg:py-24">
+        <div className="max-w-4xl lg:pr-4">
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-4 py-2 text-sm shadow-sm backdrop-blur">
             <Sparkles className="h-4 w-4 text-[#5b5cf0]" />
             飞书AI未来人才大赛 · 团队补充材料
@@ -56,7 +56,7 @@ export function Hero() {
           </dl>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[560px] lg:mx-0">
+        <div className="relative mx-auto w-full max-w-[560px] lg:mx-0 lg:pl-4">
           <div className="absolute -inset-8 -z-10 rounded-full bg-gradient-to-br from-blue-300/20 via-purple-300/15 to-cyan-300/20 blur-3xl" />
           <div className="rounded-[2rem] border border-white/80 bg-white/78 p-5 shadow-[0_30px_100px_rgba(32,62,236,0.13)] backdrop-blur-xl md:p-7">
             <div className="flex items-center justify-between border-b border-black/8 pb-5">
