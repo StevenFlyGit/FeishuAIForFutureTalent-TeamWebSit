@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import Link from "next/link"
 import { ArrowDown, ArrowUpRight, FlaskConical, Sparkles } from "lucide-react"
 
@@ -15,10 +14,6 @@ const experimentSteps = ["兴趣假设", "微任务", "行动证据", "反馈校
 export function Hero() {
   return (
     <section id="top" className="relative min-h-screen overflow-hidden pt-20">
-      <div className="pointer-events-none absolute -right-56 top-16 -z-10 h-[520px] w-[520px] md:-right-64 md:top-12 md:h-[700px] md:w-[700px]">
-        <Image src="/images/orb.png" alt="" fill className="object-contain opacity-45" priority />
-      </div>
-
       <div className="mx-auto grid min-h-[calc(100vh-5rem)] max-w-[1280px] items-center gap-y-14 gap-x-0 px-6 py-16 md:px-12 lg:grid-cols-[1.08fr_.92fr] lg:gap-x-8 lg:py-24">
         <div className="max-w-4xl lg:pr-4">
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-4 py-2 text-sm shadow-sm backdrop-blur">
